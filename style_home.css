@@ -21,23 +21,7 @@ div>ul>li{
 
 /*Cabeçalho Fim*/
 
-/*Conteúdo*/
-
-/*Conteúdo Fim*/
-
-
-/*Rodapé*/
-
-/*Rodapé Fim*/
-
-
 
 /*Responsividade*/
-@media screen and (max-width: 992px) {
-    #logo, #pesquisa{
-        align-items: center;
-        width: 50%;
-        padding-top: 20px;
-    }
-}
+
 /*Responsividade Fim*/
