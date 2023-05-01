@@ -20,3 +20,12 @@ div>ul>li{
 }
 
 /*Cabeçalho Fim*/
+
+
+/*Conteudo*/
+section .card-body:hover{
+    background-color: #e2e2e2;
+    }
+    
+
+/*Conteudo Fim*/
