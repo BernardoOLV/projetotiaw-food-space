@@ -29,3 +29,11 @@ section .card-body:hover{
     
 
 /*Conteudo Fim*/
+
+/*Responsividade*/
+@media screen and (max-width: 768px) {
+    #filtro{
+        display: none;
+    }
+}
+/*Responsividade Fim*/

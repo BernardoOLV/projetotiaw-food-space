@@ -23,5 +23,9 @@ div>ul>li{
 
 
 /*Responsividade*/
-
+@media screen and (max-width: 768px) {
+    #filtro{
+        display: none;
+    }
+}
 /*Responsividade Fim*/
