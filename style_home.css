@@ -17,7 +17,7 @@ body, ul, li, p{
 #conta:hover{
     background-color: rgb(15, 15, 15); 
 }
-ul>li:hover{
+nav>div>ul>li:hover{
     background-color: rgb(15, 15, 15); 
 }
 
@@ -26,6 +26,14 @@ div>ul>li{
 }
 
 /*Cabeçalho Fim*/
+
+/*Conteudo*/
+section .card-body:hover{
+    background-color: #e2e2e2;
+    }
+    
+
+/*Conteudo Fim*/
 
 
 /*Responsividade*/
