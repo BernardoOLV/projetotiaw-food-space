@@ -12,7 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-    <script src="receitas_script.js"></script>
+  <script src="receitas_script.js"></script>
+  <script src="receitas_cards_script.js"></script>
 </head>
 
 <body>
@@ -20,425 +21,117 @@
     <nav class="bg-black">
       <div class="container justify-content-center">
         <div class="row align-items-center">
-          <div class="col-3 col-sm-3 col-md-2 col-lg-2" > 
-            <img id="logo" class="col-3 col-sm-3 col-md-2 col-lg-2 p-2" src="img_home/logo.jpg" alt="">      
+          <div class="col-3 col-sm-3 col-md-2 col-lg-2">
+            <img id="logo" class="col-3 col-sm-3 col-md-2 col-lg-2 p-2" src="img_home/logo.jpg" alt="">
           </div>
 
           <div class="col-6 col-sm-6 col-md-8 col-lg-8 text-center">
-              <img class="w-50" src="img_home/titulo.png" alt="">      
+            <img class="w-50" src="img_home/titulo.png" alt="">
           </div>
-            <div class="col-3 col-sm-3 col-md-2 col-lg-2 p-2 mt-5 text-center text-light rounded" id="conta">
-              <div class="col-lg-12 col-sm-12" type="submit"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Entrar</div>
-            </div>
+          <div class="col-3 col-sm-3 col-md-2 col-lg-2 p-2 mt-5 text-center text-light rounded" id="conta">
+            <div class="col-lg-12 col-sm-12" type="submit"><i class="fa-solid fa-user" style="color: #ffffff;"></i>
+              Entrar</div>
+          </div>
 
         </div>
-        
+
       </div>
-          <div class="container" id="menu">
-                <ul class="row navbar-text list-group list-group-horizontal nav justify-content-center link-light d-flex flex-wrap">
-                  <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light" href="home.html">Home</a></li>
-                  <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light" href="receitas.html">Receitas</a></li>
-                  <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light" href="Topicos_exercicios.html">Exercícios</a></li>
-                  <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light" href="Notícias.html">Noticias</a></li>
-                  <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light" href="#">Sobre Nós</a></li>
-                  <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light" href="#">My Space</a></li>
-                </ul>
-          </div>
+      <div class="container" id="menu">
+        <ul
+          class="row navbar-text list-group list-group-horizontal nav justify-content-center link-light d-flex flex-wrap">
+          <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light"
+              href="home.html">Home</a></li>
+          <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light"
+              href="receitas.html">Receitas</a></li>
+          <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light"
+              href="Topicos_exercicios.html">Exercícios</a></li>
+          <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light"
+              href="Notícias.html">Noticias</a></li>
+          <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light"
+              href="#">Sobre Nós</a></li>
+          <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-light" href="#">My
+              Space</a></li>
+        </ul>
+      </div>
     </nav>
 
   </header>
-      
-    <div class="container">
-        <div class="row mt-5 ">
-          <section class="col-sm-12 col-md-8">
-            <h3 class="bg-black p-2 text-light text-center rounded">Selecione a Refeição</h3>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Café da Manhã
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <div class="container">
-                            <div class="row justify-content-center">
 
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
+  <div class="container">
+    <div class="row mt-5 ">
 
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
+      <aside class="col-sm-12 col-md-3">
+        <div class="container bg-black rounded">
+          <div id="filtro" class="row p-3 justify-content-center">
+            <h5 class="col-12 m-2 text-center text-light">Filtros</h5>
+            <p class="col-12 mb-0 text-light">Restrição alimentar:</p>
+            <select class="form-select text-center" aria-label="Default select example">
+              <option selected>Geral</option>
+              <option value="1">Zero Glútem</option>
+              <option value="2">Zero Lactóse</option>
+              <option value="4">Lacto-vegetariano</option>
+              <option value="5">Ovo-lacto-vegetariano</option>
+              <option value="6">Vegetariano estrito</option>
+              <option value="7">Baixo Colesterol</option>
+              <option value="8">Zero açúcar</option>
 
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
+            </select>
 
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
+            <p class="col-12 mt-3 mb-0 text-light">Refeição:</p>
+            <select class="form-select text-center mb-2" aria-label="Default select example">
+              <option selected>Geral</option>
+              <option value="1">Café da manhã</option>
+              <option value="2">Almoço e Jantar</option>
+              <option value="3">Lanche</option>
+            </select>
 
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
+            <p class="col-12 mt-2 mb-0 text-light">Dificuldade de preparo:</p>
+            <select class="form-select text-center mb-2" aria-label="Default select example">
+              <option selected>Geral</option>
+              <option value="1">Fácil</option>
+              <option value="2">Médio</option>
+              <option value="4">Difícil</option>
+            </select>
 
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
+            <button type="button" class="col-3 mt-2 btn btn-light p-1">Filtrar</button>
 
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
-
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
-
-                              <div class="card col-3 m-1 p-1 rounded">
-                                <img src="img_home/img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                    <h4>Receita Café</h4>
-                                  </a>
-                                  <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                                </div>
-                              </div>
-                              
-
-
-
-                            </div>
-                          </div>
-                  
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Almoço e Jantar
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <div class="container">
-                        <div class="row justify-content-center">
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Almoço</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Almoço</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Almoço</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Almoço</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Jantar</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Jantar</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Jantar</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Jantar</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Jantar</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-                          
-
-
-
-                        </div>
-                      </div>
-              
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Lanches
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <div class="container">
-                        <div class="row justify-content-center">
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-
-                          <div class="card col-3 m-1 p-1 rounded">
-                            <img src="img_home/img7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html">
-                                <h4>Receita Lanche</h4>
-                              </a>
-                              <p class="fs-6 mb-0"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> 7 Curtidas</p>
-                            </div>
-                          </div>
-                          
-
-
-
-                        </div>
-                      </div>
-              
-                   </div>
-                  </div>
-                </div>
-              </div>
-        
-          </section>
-    
-          <aside class="col-sm-12 col-md-4">
-            <div class="container bg-black rounded">
-              <div id="filtro" class="row p-3 justify-content-center">
-                <h5 class="col-12 m-2 text-center text-light">Filtros</h5>
-                <p class="col-12 mb-0 text-light">Restrição alimentar:</p>
-                <select class="form-select text-center" aria-label="Default select example">
-                  <option selected>Geral</option>
-                  <option value="1">Zero Glútem</option>
-                  <option value="2">Zero Lactóse</option>
-                  <option value="4">Lacto-vegetariano</option>
-                  <option value="5">Ovo-lacto-vegetariano</option>
-                  <option value="6">Vegetariano estrito</option>
-                  <option value="7">Baixo Colesterol</option>
-                  <option value="8">Zero açúcar</option>
-    
-                </select>
-    
-                <p class="col-12 mt-3 mb-0 text-light">Refeição:</p>
-                <select class="form-select text-center mb-2" aria-label="Default select example">
-                  <option selected>Geral</option>
-                  <option value="1">Café da manhã</option>
-                  <option value="2">Almoço e Jantar</option>
-                  <option value="3">Lanche</option>
-                </select>
-                
-                <p class="col-12 mt-2 mb-0 text-light">Dificuldade de preparo:</p>
-                <select class="form-select text-center mb-2" aria-label="Default select example">
-                  <option selected>Geral</option>
-                  <option value="1">Fácil</option>
-                  <option value="2">Médio</option>
-                  <option value="4">Difícil</option>
-                </select>
-                
-                <button type="button" class="col-3 mt-2 btn btn-light p-1">Filtrar</button>
-
-              </div>
-            </div>
-        
-    
-            <div class="container">
-              <div class="row justify-content-center">
-            <div class="card col-10 align-items-center p-2 m-3 mt-5 bg-black rounded">
-              <img src="img_home/img8.jpg" class="card-img-top p-1 w-100 rounded" alt="...">
-              <div class="card-body">
-                <h4 class="text-light text-center mb-3">Crise nos Mercados</h4>
-                <p class="text-light"> Deputados derrubam veto e obrigam mercados a limpar carrinhos de compra...</p>
-                <p class="text-end"><a  class="text-secondary" href="#">leia mais...</a></p>
-            </div>
-            </div>
-    
-            <div class="card col-10 align-items-center p-2 m-3 bg-black rounded">
-              <img src="img_home/img10.jpg" class="card-img-top p-1 w-100 rounded" alt="...">
-              <div class="card-body">
-                <h4 class="text-light text-center mb-3">Vôlei na liderança!</h4>
-                <p class="text-light">Vôlei feminino passa fácil pela Coreia do Sul e estreia com vitória em Tóquio...</p>
-                <p class="text-end"><a  class="text-secondary" href="#">leia mais...</a></p>
-              </div>
-            </div>
-                    
-              </div>
-            </div>
-    
-    
-          </aside>        
-    
-        </div>
-    </div>
-
-      <footer>
-        <div class="container-fluid mt-5">
-          <div class="row bg-black">
-            <h5 class="text-light text-center p-1">
-              TIAW - Equipe Food Space - Puc Minas 2023
-            </h5>
-    
           </div>
         </div>
-    
-      </footer>
-    
-    
+
+      </aside>
+
+      <section class="col-sm-12 col-md-9">
+        <h3 class="bg-black p-2 text-light text-center rounded">Selecione uma Receita</h3>
+        <div class="container">
+          <div class="row">
+            <div class="container-fluid">
+              <h3 id="generosFiltro" class="mx-2 my-1 p-2"></h3>
+              <div class="row justify-content-center" id="cafe">
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid mt-5">
+      <div class="row bg-black">
+        <h5 class="text-light text-center p-1">
+          TIAW - Equipe Food Space - Puc Minas 2023
+        </h5>
+
+      </div>
+    </div>
+
+  </footer>
+  <script src="dadosreceitas.js"></script>
+  <script src="receitas_script.js"></script>
+
+
 </body>
