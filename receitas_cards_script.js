@@ -1,10 +1,11 @@
-function selectCard(identificador){
-    var conteudoDescricao = document.getElementById("descricaoReceita");
-    var getReceita = localStorage.getItem('receita_' + identificador)
-    var objetoReceita = JSON.parse(getReceita)
-    var htmlDescricao = "";
-    var cardDescricao = 
-        `          <div class="row mt-4">
+function selectCard(identificador) {
+  var conteudoDescricao = document.getElementById("descricaoReceita");
+  var getReceita = localStorage.getItem(identificador);
+  console.log(getReceita)
+  var objetoReceita = JSON.parse(getReceita);
+  var htmlDescricao = "";
+  /*var cardDescricao =
+    `<div class="row mt-4">
         <div class="col-12">
           <a class="position-absolute top-0 end-0 m-4" href="receitas.html"><button type="button" class="btn-close"
               aria-label="Close"></button></a>
@@ -42,10 +43,16 @@ function selectCard(identificador){
 
         </div>
 
-      </div>
-`;
-htmlDescricao += cardDescricao;
-conteudoDescricao.innerHTML = htmlDescricao;
-
+      </div>`;
+  htmlDescricao += cardDescricao;
+  conteudoDescricao.innerHTML = htmlDescricao;
+*/
 
 }
+
+window.onload = () => {
+  let idParametro = new URLSearchParams(window.location.search);
+  let identificador = idParametro.get("id");
+  selectCard(identificador);
+}
+
