@@ -39,10 +39,10 @@ function selectCard(identificador) {
           
           <h4 class="text-center mt-5">Tags:</h4>
           <ul class="lh-lg">
-          <li>${objetoReceita[identificador].tag}</li>
+          <li>${objetoReceita[identificador].refeicao}</li>
+          <li>${objetoReceita[identificador].restricao}</li>
           </ul>
           <div class="text-center">
-            <h4 class="text-center mt-5">Curtidas:</h4>
             <button type="button" class="btn  text-center"><p class=" mt-2"><i class="fa-solid fa-heart" style="color: #ff0000;"></i>Adicionar aos favoritos</p></button>
           </div>
         </div>

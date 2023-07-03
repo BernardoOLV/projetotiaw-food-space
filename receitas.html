@@ -60,40 +60,33 @@
   <div class="container">
     <div class="row mt-5 ">
 
-      <aside class="col-sm-12 col-md-3">
+      <aside class="col-sm-12 col-md-3 mb-2">
         <div class="container bg-black rounded">
           <div id="filtro" class="row p-3 justify-content-center">
             <h5 class="col-12 m-2 text-center text-light">Filtros</h5>
             <p class="col-12 mb-0 text-light">Restrição alimentar:</p>
-            <select class="form-select text-center" aria-label="Default select example">
-              <option selected>Geral</option>
-              <option value="1">Zero Glútem</option>
-              <option value="2">Zero Lactóse</option>
-              <option value="4">Lacto-vegetariano</option>
-              <option value="5">Ovo-lacto-vegetariano</option>
-              <option value="6">Vegetariano estrito</option>
-              <option value="7">Baixo Colesterol</option>
-              <option value="8">Zero açúcar</option>
+            <select id="selectrestricao" class="form-select text-center" aria-label="Default select example">
+              <option value="Geral" selected>Geral</option>
+              <option value="Zero Glúten">Zero Glúten</option>
+              <option value="Zero Lactose">Zero Lactóse</option>
+              <option value="Lacto-vegetariano">Lacto-vegetariano</option>
+              <option value="Ovo-lacto-vegetariano">Ovo-lacto-vegetariano</option>
+              <option value="Vegetariano Estrito">Vegetariano estrito</option>
+              <option value="Baixo Colesterol">Baixo Colesterol</option>
+              <option value="Zero Açúcar">Zero açúcar</option>
 
             </select>
 
             <p class="col-12 mt-3 mb-0 text-light">Refeição:</p>
-            <select class="form-select text-center mb-2" aria-label="Default select example">
-              <option selected>Geral</option>
-              <option value="1">Café da manhã</option>
-              <option value="2">Almoço e Jantar</option>
-              <option value="3">Lanche</option>
+            <select id="selectrefeicao" class="form-select text-center mb-2" aria-label="Default select example">
+              <option value="Geral" selected>Geral</option>
+              <option value="Café da Manhã">Café da Manhã</option>
+              <option value="Almoço e Jantar">Almoço e Jantar</option>
+              <option value="Lanche">Lanche</option>
             </select>
 
-            <p class="col-12 mt-2 mb-0 text-light">Dificuldade de preparo:</p>
-            <select class="form-select text-center mb-2" aria-label="Default select example">
-              <option selected>Geral</option>
-              <option value="1">Fácil</option>
-              <option value="2">Médio</option>
-              <option value="4">Difícil</option>
-            </select>
 
-            <button type="button" class="col-3 mt-2 btn btn-light p-1">Filtrar</button>
+            <button type="button" class="col-3 mt-2 btn btn-light p-1" onclick="filtro()">Filtrar</button>
 
           </div>
         </div>
@@ -130,7 +123,6 @@
     </div>
 
   </footer>
-  <script src="dadosreceitas.js"></script>
   <script src="receitas_script.js"></script>
 
 
