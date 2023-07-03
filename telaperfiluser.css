@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+#bemvindoss{
+    color: rgb(255, 238, 0);
+    font-weight: bold;
+
+    
+    
+}
+
+#perfil{
+    color: rgb(0, 0, 0);
+
+}
+
+label{
+    color: rgb(255, 238, 0);
+
+}
+
+#emaill{
+   background-color: rgb(26, 26, 26);
+   
+}
+
+#colFormLabelSm{
+    background-color: rgba(255, 238, 0, 0.993);
+}
+
+#nom11{
+    background-color: rgb(255, 238, 0);
+}
+
+
+
+#inputPassword6{
+    background-color: rgb(255, 238, 0);
+ 
+}
+
+#restr{
+    color: rgb(255, 255, 255);
+
+}
+
+#senhaa01{
+    color: aliceblue;
+}
