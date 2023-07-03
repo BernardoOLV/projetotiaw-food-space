@@ -14,7 +14,7 @@ function Cadastrar() {
     
   
     // Testes
-    console.log('Nome:', nome);
+    console.log('Nome:', nome); 
     console.log('Nome:', sobrenome);
     console.log('Email:', email);
     console.log('Senha:', senha);
