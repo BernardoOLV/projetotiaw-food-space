@@ -50,6 +50,7 @@ function carregarProdutos(dados){
             }
 
             var receitaStorage = {
+                id: i,
                 nome: receitaAtual.nome,
                 ingredientes: receitaAtual.secao[0].conteudo,
                 modoPreparo: receitaAtual.secao[1].conteudo,
@@ -76,8 +77,8 @@ function exibir(){
     for(let i=0; i<30;i++){
 
         htmlcafedamanha += 
-    `<div class="card col-10 col-sm-5  col-md-3 m-1 p-1 rounded" style="max-height: 250px" id="${i}">
-        <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html?id=${i}">
+    `<div class="card col-10 col-sm-5  col-md-3 m-1 p-1 rounded" style="max-height: 250px" id="${receitas[i].id}">
+        <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html?id=${receitas[i].id}">
             <h5 class="p-1">${receitas[i].nome}</h5></a>
         </div>
      </div>`
@@ -113,9 +114,9 @@ function exibirReceitasFiltradas() {
 
     for (let i = 0; i < receitasFiltradas.length; i++) {
         htmlcafedamanha += 
-        `<div class="card col-10 col-sm-5  col-md-3 m-1 p-1 rounded" style="max-height: 250px" id="${i}">
+        `<div class="card col-10 col-sm-5  col-md-3 m-1 p-1 rounded" style="max-height: 250px" id="${receitasFiltradas[i].id}">
             <div class="card-body mt-3 m-1 p-0 text-center rounded">
-                <a class="nav-link active" href="receitas_cards.html?id=${i}">
+                <a class="nav-link active" href="receitas_cards.html?id=${receitasFiltradas[i].id}">
                     <h5 class="p-1">${receitasFiltradas[i].nome}</h5>
                 </a>
             </div>
