@@ -1,0 +1,142 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho TIAW</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/127ffd6d21.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <title>Alterar Foto de Perfil</title>
+    <link rel="stylesheet" href="telaeditarperfiluser.css">
+    <style>
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="m-0">
+        <nav class="bg-black">
+            <div class="container justify-content-center">
+                <div class="row align-items-center">
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2">
+                        <img class="w-50" src="perfiluser.imgs/Logo Food Space com fundo.png" id="logo">
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-8 col-lg-8 text-center">
+                        <img class="w-50" src="perfiluser.imgs/titulo.png" alt="">
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 p-2 mt-5 text-center text-warning rounded" id="conta">
+                        <div class="col-lg-12 col-sm-12" type="submit"><i class="fa-solid fa-user"
+                                style="color: #ffc107;"></i>
+                            Conta</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container" id="menu">
+                <ul
+                    class="row navbar-text list-group list-group-horizontal nav justify-content-center link-light d-flex flex-wrap">
+                    <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-warning"
+                            href="home.html">Home</a></li>
+                    <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-warning"
+                            href="receitas.html">Receitas</a></li>
+                    <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-warning"
+                            href="#">Exercícios</a></li>
+                    <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-warning"
+                            href="#">Noticias</a></li>
+                    <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-warning"
+                            href="#">Sobre Nós</a></li>
+                    <li class="nav-item col-sm-6 col-md-2 rounded"><a class="nav-link active text-center text-warning"
+                            href="#">My
+                            Space</a></li>
+                </ul>
+            </div>
+        </nav>
+
+          
+    </header>
+
+
+    <!--Foto de perfil de Usuario-->
+    <div class="container-fluid">
+        <div class="row">
+          <img src="perfiluser.imgs/imgtelaperfiledit.png" class="img-fluid" alt="">
+        </div>
+      </div>
+
+
+
+    <!--CONFIGURACAO-->
+    <div class="col-sm-12 col-md-12 text-center p-3">
+        <div id="bemvindoss">
+            <h1>EDITAR PERFIL</h1>
+        </div>
+    </div>
+
+    <!--Tela de perfil imagem-->
+    <div class="container p-3" id="emaill">
+        <div class="row">
+            <div class="col">
+                <img id="profile-pic" class="profile-pic" src="perfiluser.imgs/perfiluserteste.png" alt="">
+                <form>
+                    <label for="perfil"></label>
+                    <input type="file" id="perfil0010" name="perfil" accept="image/*" onchange="previewImage(event)">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="container p-3" id="emaill">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+
+                    <!--EDITAR PERFIL-->
+
+                    <label for="nome" id="nomefont11">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
+
+                    <label for="sobrenome" id="nomefont11">Sobrenome:</label>
+                    <input type="text" id="sobrenome" placeholder="Digite seu sobrenome"><br><br>
+
+                    <label for="senha" id="nomefont11">Senha:</label>
+                    <input type="password" id="senha" placeholder="Digite sua nova senha"><br><br>
+                    <a href="telaperfilusuario.html">
+                        <button id="salvarbtn1" onclick="saveData()">Salvar</button>
+                    </a>
+                    <button id="carregarbtn1" onclick="loadData()">Carregar</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--JS-->
+        <script src="dadosperfiluser.js"></script>
+
+        <!--Rodape-->
+        <footer>
+            <div class="container-fluid mt-5">
+                <div class="row bg-dark">
+                    <h5 class="text-light text-center p-1">
+                        TIAW - Equipe Food Space - Puc Minas 2023
+                    </h5>
+
+                </div>
+            </div>
+        </footer>
+</body>
