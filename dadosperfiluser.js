@@ -1,12 +1,22 @@
+if(localStorage.getItem('token') == null){
+  alert('Você precisa estar logado para acessar essa página')
+  window.location.href ='login.html';
+}
 
-let _dadodosUser1 = [
-  { id: 1, name: 'Kaylan', sobrename: 'Subtil', email: 'kaylan10@gmail.com', senha: '1234', },
-  { id: 2, name: 'Luis', sobrename: 'Felipe', email: 'luis10@gmail.com', senha: '1234', }
-]
+var userLogado = JSON.parse(localStorage.getItem('userLogado'));
+var campoEmail = document.getElementById('campoEmail');
+var campoNome = document.getElementById('campoNome');
+var campoSobrenome = document.getElementById('campoSobrenome');
 
-localStorage.setItem('dadosUserss', JSON.stringify(_dadodosUser1));
+campoEmail.innerHTML = `<strong>${userLogado.email}</strong>`;
+campoNome.innerHTML = `<strong>${userLogado.nome}</strong>`;
+campoSobrenome.innerHTML = `<strong>${userLogado.sobrenome}</strong>`;
 
-
+function Sair(){
+  localStorage.removeItem('token');
+  localStorage.removeItem('userLogado');
+  window.location.href = 'login.html';
+}
 
 
 function saveData() {

@@ -1,7 +1,13 @@
+if(localStorage.getItem('token') == null){
+  alert('Você precisa estar logado para acessar essa página')
+  window.location.href ='login.html';
+}
+var objetoReceita;
+
 function selectCard(identificador) {
   var conteudoDescricao = document.getElementById("descricaoReceita");
   var receitas = localStorage.getItem("receitas");
-  var objetoReceita = JSON.parse(receitas);
+  objetoReceita = JSON.parse(receitas);
   var strIngredientes = "";
   strIngredientes = JSON.stringify(objetoReceita[identificador].ingredientes);
   var vetIngredientes = strIngredientes.split(",");
@@ -21,7 +27,7 @@ function selectCard(identificador) {
   var cardDescricao =
     `<div class="row mt-4">
         <div class="col-12">
-          <a class="position-absolute top-0 end-0 m-4" href="receitas.html"><button type="button" class="btn-close"
+          <a class="position-absolute top-0 end-0 m-4" href="#"><button onclick="history.back()" type="button" class="btn-close"
               aria-label="Close"></button></a>
           <h1 class="text-center mt-5">${objetoReceita[identificador].nome}</h1>
         </div>
@@ -43,7 +49,7 @@ function selectCard(identificador) {
           <li>${objetoReceita[identificador].restricao}</li>
           </ul>
           <div class="text-center">
-            <button type="button" class="btn  text-center"><p class=" mt-2"><i class="fa-solid fa-heart" style="color: #ff0000;"></i>Adicionar aos favoritos</p></button>
+            <button type="button" onclick="Favoritar(${identificador})" class="btn text-center"><p class=" mt-2" id="campoEmoji"><i class="fa-regular fa-heart" style="color: #ff0000;"></i>Adicionar aos favoritos</p></button>
           </div>
         </div>
 
@@ -62,6 +68,20 @@ function selectCard(identificador) {
   conteudoDescricao.innerHTML = htmlDescricao;
 
 
+}
+
+function Favoritar(id){
+  let campoEmoji = document.getElementById('campoEmoji');
+  
+  if (campoEmoji.innerHTML.includes("fa-regular")) {
+    campoEmoji.innerHTML = `<i class="fa-solid fa-heart" style="color: #ff0000;"></i>Adicionar aos favoritos`;
+    objetoReceita[id].favorito = true;
+  } else {
+    campoEmoji.innerHTML = `<i class="fa-regular fa-heart" style="color: #ff0000;"></i>Adicionar aos favoritos`;
+    objetoReceita[id].favorito = false;
+  }
+  // Atualizar o localStorage
+  localStorage.setItem("receitas", JSON.stringify(objetoReceita));
 }
 
 window.onload = () => {

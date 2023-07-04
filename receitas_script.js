@@ -1,4 +1,8 @@
-var receitas = JSON.parse(localStorage.getItem("receitas"));
+if(localStorage.getItem('token') == null){
+    alert('Você precisa estar logado para acessar essa página')
+    window.location.href ='login.html';
+  }
+  var receitas = JSON.parse(localStorage.getItem("receitas"));
 
 if(!receitas){
     receitas = []
@@ -56,6 +60,7 @@ function carregarProdutos(dados){
                 modoPreparo: receitaAtual.secao[1].conteudo,
                 refeicao: ref,
                 restricao: rest,
+                favorito: false,
             };
 
             receitas.push(receitaStorage)
@@ -77,7 +82,7 @@ function exibir(){
     for(let i=0; i<30;i++){
 
         htmlcafedamanha += 
-    `<div class="card col-10 col-sm-5  col-md-3 m-1 p-1 rounded" style="max-height: 250px" id="${receitas[i].id}">
+    `<div class="receitas card col-10 col-sm-5  col-md-3 m-1 p-1 rounded" style="max-height: 250px" id="${receitas[i].id}">
         <div class="card-body mt-3 m-1 p-0 text-center rounded"><a class="nav-link active" href="receitas_cards.html?id=${receitas[i].id}">
             <h5 class="p-1">${receitas[i].nome}</h5></a>
         </div>

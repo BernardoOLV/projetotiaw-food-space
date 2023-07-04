@@ -1,39 +1,50 @@
 /*Definições Gerais*/
-html{
+html {
     height: 100%;
 }
 
-body, ul, li, p{ 
+body,
+ul,
+li,
+p {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*Definições Gerais FIM*/
 
 /*Cabeçalho*/
-#logo{
+#logo {
     width: 70%;
 }
 
-#conta:hover{
-    background-color: rgb(15, 15, 15); 
-}
-nav>div>ul>li:hover{
-    background-color: rgb(15, 15, 15); 
+#conta:hover {
+    background-color: rgb(15, 15, 15);
 }
 
-div>ul>li{
+nav>div>ul>li:hover,
+#btnPerfil:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+div>ul>li {
     list-style: none;
 }
 
 /*Cabeçalho Fim*/
 
 /*Conteudo*/
-section .card-body:hover{
+section .receitas:hover {
     background-color: #e2e2e2;
-    }
-    
-#cardHome1:hover, #cardHome2:hover{
+}
+
+section .card-body:hover {
+    background-color: #e2e2e2;
+}
+
+#cardHome1:hover,
+#cardHome2:hover {
     background-color: #e2e2e2;
 }
 
@@ -42,8 +53,9 @@ section .card-body:hover{
 
 /*Responsividade*/
 @media screen and (max-width: 768px) {
-    #filtro{
+    #filtro {
         display: none;
     }
 }
+
 /*Responsividade Fim*/

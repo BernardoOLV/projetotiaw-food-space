@@ -1,20 +1,17 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trabalho DIW</title>
-  <link rel="stylesheet" href="style_receitas.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/127ffd6d21.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-  <script src="receitas_cards_script.js"></script>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Space: Esportes</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/127ffd6d21.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+          crossorigin="anonymous"></script>
+          <link rel="icon" type="image/x-icon" href="/img_Exercicios/Logo Food Space Guia.png">
+      </head>
 <body>
   <header class="m-0">
     <nav class="bg-black">
@@ -56,22 +53,38 @@
     </nav>
 
   </header>
+  
+    <!--Botão de Voltar-->
 
+  <button onclick="history.back()" class="btn mb-3">
+    <i class="fas fa-arrow-left"></i> Voltar
+  </button>
+      
+      <!--–Os três cards com cada tipo de exercício  --->
+      
+      <div class="container">
+        <div class="row mt-5">
 
-  <div class="container">
-    <div class="row mt-5 ">
-      <section class="col-12 card">
-        <div class="container" id="descricaoReceita">
+       <h3 class="bg-dark p-2 text-light text-center rounded">Esportes</h3>
+
+       <section class="card-container col-sm-12">
+        <div class="row" id="exibirCards"> <!--–Exibir cards   --->
           
+          
+
         </div>
       </section>
+
+      
+
+
 
     </div>
   </div>
 
   <footer>
     <div class="container-fluid mt-5">
-      <div class="row bg-black">
+      <div class="row bg-dark">
         <h5 class="text-light text-center p-1">
           TIAW - Equipe Food Space - Puc Minas 2023
         </h5>
@@ -81,7 +94,7 @@
 
   </footer>
 
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="CardsEsportes.js"></script>
 </body>
+</html>
