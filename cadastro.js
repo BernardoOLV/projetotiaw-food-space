@@ -5,7 +5,7 @@ function Validar() {
     var sobrenomeImput = document.getElementById('sobrenome');
     var emailInput = document.getElementById('email');
     var senhaInput = document.getElementById('senha');
-  
+   
     // Atribuindo valores
     var nome = nomeInput.value;
     var sobrenome = sobrenomeImput.value;

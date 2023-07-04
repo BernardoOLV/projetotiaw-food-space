@@ -14,7 +14,6 @@ campoSobrenome.innerHTML = `<strong>${userLogado.sobrenome}</strong>`;
 
 function Sair(){
   localStorage.removeItem('token');
-  localStorage.removeItem('userLogado');
   window.location.href = 'login.html';
 }
 
